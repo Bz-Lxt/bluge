@@ -46,6 +46,8 @@ func init() {
 	reflectStaticSizeMatchNoneSearcher = int(reflect.TypeOf(mns).Size())
 	var ps PhraseSearcher
 	reflectStaticSizePhraseSearcher = int(reflect.TypeOf(ps).Size())
+	var ss SpanSearcher
+	reflectStaticSizeSpanSearcher = int(reflect.TypeOf(ss).Size())
 	var ts TermSearcher
 	reflectStaticSizeTermSearcher = int(reflect.TypeOf(ts).Size())
 }
@@ -64,4 +66,5 @@ var reflectStaticSizeFilteringSearcher int
 var reflectStaticSizeMatchAllSearcher int
 var reflectStaticSizeMatchNoneSearcher int
 var reflectStaticSizePhraseSearcher int
+var reflectStaticSizeSpanSearcher int
 var reflectStaticSizeTermSearcher int
